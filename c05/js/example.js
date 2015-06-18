@@ -17,6 +17,10 @@ list.insertBefore(newItemFirst, list.firstChild);                  // Add elemen
 
 var listItems = document.querySelectorAll('li');                   // All <li> elements
 
+// Above querySelectorAll produces a static nodelist, getElementsByTagName
+// produces a live nodelist and gets the same result in this example
+  // var listItems = document.getElementsByTagName('li');
+
 // ADD A CLASS OF COOL TO ALL LIST ITEMS
 var i;                                                             // Counter variable
 for (i = 0; i < listItems.length; i++) {                           // Loop through elements
